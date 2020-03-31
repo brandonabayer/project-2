@@ -1,0 +1,46 @@
+<div id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h1>{{msg}}</h1>
+                <h2>This is our Home Page!</h2>
+                <form class="clearfix mb-4" action="POST">
+                    <div class="form-group">
+                        <label for="example-text">First Name</label>
+                        <input type="text" id="fname" class="form-control" aria-describedby="example-text"
+                            placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="example-description">Last Name</label>
+                        <textarea class="form-control" id="lname" aria-describedby="example-description"
+                            placeholder="Enter Last Name"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="example-description">City</label>
+                        <textarea class="form-control" id="city" aria-describedby="example-description"
+                            placeholder="Enter City"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="example-description">State</label>
+                        <textarea class="form-control" id="state" aria-describedby="example-description"
+                            placeholder="Enter State"></textarea>
+                    </div>
+
+                    <button id="submit" class="btn btn-primary float-right">Submit</button>
+                </form>
+                <h3>Examples:</h3>
+                {{!-- <ul id="example-list" class="list-group">
+                    {{#each examples}}
+                    <li data-id="{{this.id}}" class="list-group-item">
+                        <a href="example/{{this.id}}">{{this.text}}</a>
+                        <button class="btn btn-danger float-right delete">ｘ</button>
+                    </li>
+                    {{/each}}
+                </ul> --}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../public/js/view.js"></script>
