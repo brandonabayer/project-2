@@ -70,9 +70,9 @@ module.exports = function(app) {
 
       req.headers({
         "x-rapidapi-host":"coronavirus-monitor.p.rapidapi.com",
-        "x-rapidapi-key":"866c92af13msh04603b85a3ac638p1df9d3jsnaaf2dd33fef0"
+        "x-rapidapi-key":process.env.CORONAVIRUS_MONITOR_API_KEY
       });
-    
+        
       req.end(function(coronavirusAPIRes) {
         if (res.error) throw new Error(res.error);
   
