@@ -1,7 +1,8 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
-
+require('dotenv').config(); // For hiding the Coronavirus Monitor API key
+   
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -9,7 +10,7 @@ var PORT = process.env.PORT || 8008;
 
 // Requiring our models for syncing
 var db = require("./models");
-
+   
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
