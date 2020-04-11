@@ -1,6 +1,7 @@
 module.exports = function(sequelize,DataTypes){
     var Sympton = sequelize.define("Sympton",{
-        individualID: DataTypes.STRING,
+        fname: DataTypes.STRING,
+        lname: DataTypes.STRING,
         description: DataTypes.STRING,
         dateFirstAppeared: {
             type: DataTypes.DATE,

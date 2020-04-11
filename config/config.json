@@ -2,8 +2,20 @@
     "development": {
     "username": "root",
     "password": null,
+<<<<<<< HEAD
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+=======
     "database": "closetohome",
     "host": "localhost",
     "dialect": "mysql"
+>>>>>>> 95feeb1aa93d06d72a7f60970d9585c81e601143
 }
 }

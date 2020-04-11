@@ -2,13 +2,70 @@
 <html lang="en">
 
 <head>
-  <title>Close to Home</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="stylesheets/style.css" rel="stylesheet">
-</head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Close To Home</title>
 
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
 <body>
+  <nav>
+    <div class="nav-wrapper brown
+    ">
+      <a href="#!" class="brand-logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/information">Family</a></li>
+          <li><a href="/needs">Needs</a></li>
+          <li><a href="/symptons">Symptons</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/signup">Sign Up</a></li>
+      </ul>
+    </div>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/information">Family</a></li>
+        <li><a href="/needs">Needs</a></li>
+        <li><a href="/symptons">Symptons</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <form class="col s12"id="sickness">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="f_name" type="text" class="validate">
+              <label for="f_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="l_name" type="text" class="validate">
+              <label for="l_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field inline">
+                <input id="symptons" type="text" class="validate">
+                <label for="symptons">Symptons</label>
+                <button class="btn waves-effect waves-light-#0d47a1 blue darken-4" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+    </div>
+
+
   <h2>Login Form</h2>
   <form class="login">
     <div class="form-group">
@@ -26,6 +83,9 @@
         
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
+
+  <script src="/js/init.js"></script>
+
 
 </body>
 
