@@ -2,7 +2,7 @@
 // =============================================================
 var express = require("express");
 require('dotenv').config(); // For hiding the Coronavirus Monitor API key
-   
+
 // Sets up the Express App
 // =============================================================
 var app = express();
